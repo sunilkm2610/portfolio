@@ -81,7 +81,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b-2 border-[#5651e5]">
-              <Link href="/resume">Resume</Link>
+              <Link
+                href="https://drive.google.com/file/d/1wnbJUpV2Q6I1Pew7HeSOQz-EY1OfIUPe/view?usp=sharing"
+                passHref>
+                <a target="_blank">Resume</a>
+              </Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b-2 border-[#5651e5]">
               <Link href="/#contact">
@@ -169,12 +173,18 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href="/resume">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm">
-                  Resume
-                </li>
+              <Link
+                href="https://drive.google.com/file/d/1wnbJUpV2Q6I1Pew7HeSOQz-EY1OfIUPe/view?usp=sharing"
+                passHref>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <li
+                    onClick={() => setNav(false)}
+                    className="py-4 text-sm">
+                    Resume
+                  </li>
+                </a>
               </Link>
               <Link href="/#contact">
                 <li
@@ -212,7 +222,9 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href="/resume">
+                <Link
+                  href="https://drive.google.com/file/d/1wnbJUpV2Q6I1Pew7HeSOQz-EY1OfIUPe/view?usp=sharing"
+                  target="_blank">
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
