@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="container mx-auto w-full md:h-screen p-2 flex items-center pt-36 px-16 mb-8">
+      className="container mx-auto tablet:px-1 w-full md:h-screen p-2 flex items-center pt-36 laptop:px-16 mb-8">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
