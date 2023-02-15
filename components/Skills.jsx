@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="container mx-auto w-full lg:h-screen p-2 laptop:px-16 tablet:px-1">
+      className="container mx-auto w-full lg:h-screen p-2 desktop:px-16 tablet:px-1">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Skills

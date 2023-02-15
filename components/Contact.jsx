@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="container mx-auto w-full laptop:px-16 tablet:px-1 lg:h-screen">
+      className="container mx-auto w-full desktop:px-16 tablet:px-1 lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 pt-36 w-full ">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact

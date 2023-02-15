@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="mx-auto container w-full h-screen text-center laptop:px-16 tablet:px-1">
+      className="mx-auto container w-full h-screen text-center desktop:px-16 tablet:px-1">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
