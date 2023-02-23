@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import blogImg from "../public/assets/projects/blog.png";
 import cryptoImg from "../public/assets/projects/crypto.png";
+import canvasImg from "../public/assets/projects/canvas.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -40,6 +41,18 @@ const Projects = () => {
             }
             demoURL={
               "https://next-js-blog-website-two.vercel.app/"
+            }
+          />
+          <ProjectItem
+            title="MERN Canvas App"
+            backgroundImg={canvasImg}
+            projectUrl="/crypto"
+            tech="MERN Stack"
+            codeURL={
+              "https://github.com/sunilkm2610/canvas-frontend"
+            }
+            demoURL={
+              "https://canvas-frontend.vercel.app"
             }
           />
         </div>
