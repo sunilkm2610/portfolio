@@ -3,35 +3,106 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+
+:root {
+  --vsc-bg: #1e1e1e;
+  --vsc-editor: #1e1e1e;
+  --vsc-sidebar: #252526;
+  --vsc-titlebar: #323233;
+  --vsc-activitybar: #333333;
+  --vsc-tabbar: #2d2d2d;
+  --vsc-tabactive: #1e1e1e;
+  --vsc-border: #2b2b2b;
+  --vsc-line: #3c3c3c;
+  --vsc-hover: #2a2d2e;
+  --vsc-text: #d4d4d4;
+  --vsc-muted: #858585;
+  --vsc-comment: #6a9955;
+  --vsc-string: #ce9178;
+  --vsc-keyword: #569cd6;
+  --vsc-func: #dcdcaa;
+  --vsc-type: #4ec9b0;
+  --vsc-number: #b5cea8;
+  --vsc-variable: #9cdcfe;
+  --vsc-accent: #007acc;
+  --code-font-size: 13px;
+}
+
+:root[data-theme="light"] {
+  --vsc-bg: #ffffff;
+  --vsc-editor: #ffffff;
+  --vsc-sidebar: #f3f3f3;
+  --vsc-titlebar: #dddddd;
+  --vsc-activitybar: #2c2c2c;
+  --vsc-tabbar: #ececec;
+  --vsc-tabactive: #ffffff;
+  --vsc-border: #e0e0e0;
+  --vsc-line: #f0f0f0;
+  --vsc-hover: #e8e8e8;
+  --vsc-text: #1e1e1e;
+  --vsc-muted: #6e6e6e;
+  --vsc-comment: #008000;
+  --vsc-string: #a31515;
+  --vsc-keyword: #0000ff;
+  --vsc-func: #795e26;
+  --vsc-type: #267f99;
+  --vsc-number: #098658;
+  --vsc-variable: #001080;
+  --vsc-accent: #007acc;
+}
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-vsc-editor text-vsc-text tracking-normal
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-bold font-mono
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    @apply text-3xl sm:text-4xl md:text-5xl
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-2xl sm:text-3xl
   }
-  
+
   li {
     @apply cursor-pointer
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply rounded-sm uppercase tracking-wide text-sm bg-[#0e639c] text-white hover:bg-[#1177bb] transition-colors
   }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--vsc-editor);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--vsc-line);
+    border: 3px solid var(--vsc-editor);
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--vsc-hover);
+  }
+}
+
+.reduce-motion * {
+  animation: none !important;
+  transition: none !important;
 }

@@ -1,12 +1,11 @@
-import Navbar from '../components/Navbar';
 import '../styles/globals.css';
+import { SettingsProvider } from '../components/ide/SettingsContext';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Navbar />
+    <SettingsProvider>
       <Component {...pageProps} />
-    </>
+    </SettingsProvider>
   );
 }
 
